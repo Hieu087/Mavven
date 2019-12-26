@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAVVEN</title>
+    <link rel="stylesheet" href="../Mavven/css/style.css">
+    <link rel="stylesheet" href="../Mavven/css/grid-2.css">
+    <link rel="stylesheet" href="../Mavven/css/grid-4.css">
+    <link rel="stylesheet" href="../Mavven/css/queries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <header>
+        <!--------------------------------------------------------------------------->
+        <!----------------------NAVIGATION BAR-->
+        <!--------------------------------------------------------------------------->
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="./img/Logo-white.png" alt="Logo"></a>
+            </div>
+
+            <a href="#" class="logo-text">
+                MAVVEN
+            </a>
+
+            <div class="menu-list">
+                <ul>
+                    <li><a href="#">Shop</a>
+                        <ul>
+                            <li><a href="#">First</a></li><br>
+                            <li><a href="#">Second</a></li><br>
+                            <li><a href="#">Third</a></li><br>
+                            <li><a href="#">Fourth</a></li><br>
+                            <li><a href="#">Fifth</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Product</a>
+                        <ul>
+                            <li><a href="#">First</a></li><br>
+                            <li><a href="#">Second</a></li><br>
+                            <li><a href="#">Third</a></li><br>
+                            <li><a href="#">Fourth</a></li><br>
+                        </ul>
+                    </li>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#end-part">Contact</a></li>             
+                </ul>
+            </div>
+
+            <div class="icon-list">
+                <div class="search-icon">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="login-icon">
+                    <a href="./login.html"><i class="far fa-user-circle"></i></a>
+                </div>
+                <div class="cart-icon">
+                    <a><i class="fas fa-shopping-cart"></i></a>
+                    <div class="cart-num">0</div>
+                </div>
+            </div>     
+    
+            <div class="cart-container">
+                <a class="cart-exit"><i class="fas fa-times"></i></a>
+                <h1>Your cart</h1>
+
+                <div class="cart-items">
+                    <!-- CART IS EMPTY -->
+                </div>
+                
+                <div class="cart-footer">
+                    <h3>Your total : $<span class="cart-total">0</span> </h3> 
+                    <button class="purchase-btn">PURCHASE</button>
+                </div>
+
+            </div>
+            
+            <div class="hamburger">
+                <ul>
+                    <li><p href="">Shop</p>
+                        <ul>
+                            <li><a href="#">First</a></li>
+                            <li><a href="#">Second</a></li>
+                            <li><a href="#">Third</a></li>
+                            <li><a href="#">Fourth</a></li>
+                            <li><a href="#">Fifth</a></li>
+                        </ul>
+                    </li>
+                    <li><p href="#">Product</p>
+                        <ul>
+                            <li><a href="#">First</a></li>
+                            <li><a href="#">Second</a></li>
+                            <li><a href="#">Third</a></li>
+                            <li><a href="#">Fourth</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>  
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="./login.html">Sign in</a></li>  
+                </ul>
+
+                <button class="hamburger-icon"><span></span> </button>
+            </div>
+            
+            <hr class="line">
+        </nav>
+        
+        <div class="carousel-inner">
+            <div class="header-bg">
+                <img src="./img/header-background-0.jpg" alt="" class="header-pic">
+            </div>
+
+            <div class="header-bg">
+                <img src="./img/header-background-4.jpeg" alt="" class="header-pic">
+            </div>
+            
+            <div class="header-bg">
+                <img src="./img/header-background-2.jpeg" alt="" class="header-pic">
+            </div>
+        
+            <div class="header-bg">
+                <img src="./img/header-background-3.jpeg" alt="" class="header-pic">
+            </div>
+
+            <ul class="dot-list">
+                <li onclick="changeDot(0)" class="dot"></li>
+                <li onclick="changeDot(1)" class="dot"></li>
+                <li onclick="changeDot(2)" class="dot"></li>
+                <li onclick="changeDot(3)" class="dot"></li>
+            </ul>
+        </div>
+
+        <h1 class="header-text t1">WELCOME TO</h1>
+        <h1 class="header-text t2">MAVVEN</h1>
+
+    </header>
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------GENDERS SECTION-->
+    <!--------------------------------------------------------------------------->
+    <div class="gender-section">
+        <div class="col span_1_of_2 gender-pic">
+            <img src="./img/man.jpeg" alt="men">
+            <a href="#">MEN</a>
+        </div>
+
+        <div class="col span_1_of_2 gender-pic">
+            <img src="./img/woman.jpeg" alt="woman">
+            <a href="#">WOMAN</a>
+        </div>  
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------NEWS SECTION-->
+    <!--------------------------------------------------------------------------->
+    <div style="margin: 5% 0 0 0" class="news-section">
+        <h1>NEW ARRIVALS</h1>
+
+        <div class="small-line"></div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            laceat neque nihil harum cupiditate nemo id natus 
+            dignissimos fugiat sit voluptatum temporibus fuga 
+            dolorum numquam.</p>
+
+        <div class="section group">
+            <div class="col span_1_of_2 news-pic">
+                <div class="face face1">
+                    <img src="./img/news-pic-0.jpeg" alt="">
+                </div>
+                <div class="face face2">
+                    <p>Black shirt</p>
+                    <span>$99.99</span>
+                    <a href="#">Details</a>
+                    <a class="add-btn">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="col span_1_of_4 news-pic">
+                <div class="face face1">
+                    <img src="./img/news-pic-1.jpg" alt="">
+                </div>
+                <div class="face face2">
+                    <p>Hoodie</p>
+                    <span>$49.99</span>
+                    <a href="#">Details</a>
+                    <a class="add-btn">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="col span_1_of_4 news-pic">
+                <div class="face face1">
+                    <img src="./img/news-pic-2.jpg" alt="">
+                </div>
+                <div class="face face2">
+                    <p>White shoe</p>
+                    <span>$29.99</span>
+                    <a href="#">Details</a>
+                    <a class="add-btn">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------PROMOTION-->
+    <!--------------------------------------------------------------------------->
+    <div class="clearfix"></div>
+    <div class="promotion">
+        <div class="text">
+            <h1>STUDENT DISCOUNT</h1>
+            <p>Get 10% off order with Studentbeans.</p>
+            <a href="#">READ MORE</a>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------MOST POPULER SECTION-->
+    <!--------------------------------------------------------------------------->
+    <div class="most-popular">
+        <h1>MOST POPULAR</h1>
+
+        <div class="small-line"></div>
+
+        <div class="section group">
+            <div class="col span_1_of_4 mp-pics">
+                <div class="face face1">
+                    <img src="./img/most-pop-pics-2.jpeg" alt="">
+                </div>
+                <div class="face face2">
+                    <p>Paris shirt</p>
+                    <span>$59.99</span>
+                    <a href="#">Details</a>
+                    <a class="add-btn">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="col span_1_of_4 mp-pics">
+                <div class="face face1">
+                    <img src="./img/most-pop-pics-3.jpg" alt="">
+                </div>
+                <div class="face face2">
+                    <p>Black jacket</p>
+                    <span>$29.99</span>
+                    <a href="#">Details</a>
+                    <a class="add-btn">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="col span_1_of_2 mp-pics">
+                <div class="face face1">
+                    <img src="./img/most-pop-pics-1.jpeg" alt="">
+                </div>
+                <div class="face face2">
+                    <p>White shirt</p>
+                    <span>$79.99</span>
+                    <a href="#">Details</a>
+                    <a class="add-btn">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------SHIPPING-->
+    <!--------------------------------------------------------------------------->
+    <div class="shipping">
+        <h1>FREE SHIPPING:</h1>
+        <p>&#8226 On orders $100+</p><br>
+        <p>&#8226 Extra 15% off on every item over $200</p>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------ABOUT SECTION-->
+    <!--------------------------------------------------------------------------->
+    <div class="clearfix"></div>
+
+    <div class="about-section" id="about-section">
+        <h1>ABOUT US</h1>
+
+        <div class="small-line"></div>
+
+        <div class="section group">
+            <div class="col span_1_of_2 about-text">
+                <h1>2019</h1>
+                <h1>DESPACITO</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatem quo, atque nam voluptatibus quibusdam quae,
+                    ducimus porro explicabo fuga laudantium quos molestiae
+                    exercitationem dolor veniam cumque! Nostrum eligendi,
+                    sapiente beatae fuga debitis labore alias unde provident. 
+                    Ratione, possimus consequuntur sapiente incidunt eligendi 
+                    odit suscipit deserunt. Officia, eos perspiciatis obcaecati 
+                    sint tempore omnis porro excepturi vitae aperiam saepe odio 
+                    sit minus quaerat quibusdam, culpa fuga impedit similique exercitationem 
+                    ad minima assumenda! Enim soluta provident facilis nihil odit culpa! 
+                    Aut culpa recusandae temporibus iusto nulla quis laborum quos 
+                    repudiandae molestias reiciendis blanditiis praesentium expedita 
+                    delectus sit officia labore, totam harum molestiae quisquam illo 
+                    suscipit, eligendi, at tempore. Nesciunt exercitationem ducimus dolor 
+                    tempora id maxime iure quaerat illum necessitatibus. 
+                    Obcaecati, odio. Perferendis asperiores, vitae autem adipisci, 
+                    architecto iste nulla eos aliquam facilis magnam, molestias id a 
+                    dolore eveniet mollitia? Eos deserunt eaque eius labore voluptatem, 
+                    aut cum ea laboriosam repudiandae sequi quas consectetur delectus 
+                    earum consequuntur praesentium sapiente dolorem quae facilis nulla 
+                    officia minus dolor doloribus. Omnis quas necessitatibus id doloremque 
+                    in ad consectetur explicabo aperiam dolores fuga vero, neque reiciendis magni 
+                    assumenda esse ullam sequi tenetur quibusdam quidem doloribus iste repellendus? 
+                    Eum harum officia deleniti aspernatur, sed saepe ducimus dolore end.
+                </p>
+
+
+            </div>
+            <div class="col span_1_of_2 about-img">
+                
+            </div>
+
+           
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------TESTIMONIAL-->
+    <!--------------------------------------------------------------------------->
+    <div class="testimonial-section">
+        <div class="inner-width">
+            <h1>What our clients say</h1>
+
+            <div class="testimonial-pics">
+                <img src="./img/testermonial-pic-1.jpeg" alt="test-1" class="active">
+                <img src="./img/testermonial-pic-2.jpeg" alt="test-2">
+                <img src="./img/testermonial-pic-3.jpeg" alt="test-3">
+                <img src="./img/testermonial-pic-4.jpeg" alt="test-4">
+            </div>
+
+            <div class="testimonial-content">
+                <div class="testimonial active" id="test-1">
+                    <blockquote>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Est, quam possimus voluptatum odio tempore.
+                    </blockquote>
+                    <span class="description">Lionel Messi / FootBall Player</span>
+                </div>
+
+                <div class="testimonial" id="test-2">
+                    <blockquote>
+                        Dolor sit amet consectetur adipisicing elit. Beatae,
+                        aut! Vero sit laudantium nostrum pariat consectetur.
+                    </blockquote>
+                    <span class="description">Keanu Reeves / Actor</span>
+                </div>
+
+                <div class="testimonial" id="test-3">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Corrupti, perferendis. A maxime, impedit iure eum.
+                    </blockquote>
+                    <span class="description">Pewdiepie / Youtuber</span>
+                </div>
+
+                <div class="testimonial" id="test-4">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deserunt nisi hic facilis delectus nihil eius, 
+                        atque placeat commodi erspiciatis.
+                    </blockquote>
+                    <span class="description">Bill Gates / Microsoft's Founder</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------END GAME-->
+    <!--------------------------------------------------------------------------->
+    <div class="end-part" id="end-part">
+        <div class="quick-menu-section">
+            <div style="margin: 0 0 0 5%" class="section group">
+                <div class="col span_1_of_4 quick-menu">
+                    <p class="title">Categories</p>
+                    <p><a href="#">For men</a></p>
+                    <p><a href="#">For woman</a> </p>
+                    <p><a href="#">Accessories</a> </p>
+                    <p><a href="#">Others</a></p>
+                </div>
+    
+                <div class="col span_1_of_4 quick-menu">
+                    <p class="title">Account</p>
+                    <p><a href="#">Wishlist</a></p>
+                    <p><a href="#">Compare</a></p>
+                    <p><a href="#">Subcribe</a></p>
+                    <p><a href="#">Log in</a></p>               
+                </div>
+    
+                <div class="col span_1_of_4 quick-menu">
+                    <p class="title">Quick links</p>
+                    <p><a href="#">Shipping & Returns</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Term & Conditions</a></p>
+                    <p><a href="#">Vacancies</a></p>
+                </div>
+    
+                <div class="col span_1_of_4 quick-menu">
+                    <p class="title">Company</p>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">FAQs</a></p>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-top: 0px; margin-top: 50px; opacity: 0.3">
+
+        <div class="contact-section">
+            <div class="section group">
+                <div class="col span_4_of_4 c-logo">
+                    <a href="#"><img src="./img/Logo-white.png" alt=""></a>
+                </div>
+
+                <div class="col span_4_of_4 location">
+                    <p class="location address">Store location:</p>
+                    <p class="location address">722 Đào Trí, Phú Thuận, Quận 7, tp.Hồ Chí Minh, Việt Nam</p>
+                    <p class="location social"> 
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </p>
+                    <p class="location emial">Email: example123@gmail.com</p>
+                </div>
+                
+                <div class="col span_4_of_4 subcribe">
+                    <h1>SUBCRIBE</h1>
+
+                    <div class="form">
+                        <input class="text-area" type="text" placeholder="Enter your email here">
+                        <input class="submit" type="submit" value="Subcribe➡">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-top: 0px ;margin-top: 50px; opacity: 0.3">
+
+        <div class="end-text">
+            <p>Copyright &copy; 2019 MAVVEN TEAM  </p> 
+        </div>
+
+    </div>
+
+    
+
+    <!--------------------------------------------------------------------------->
+    <!----------------------SCRIPTS-->
+    <!--------------------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../Mavven/js/jquery.waypoints.min.js"></script>
+    <script src="../Mavven/js/script.js"></script>
+    <script src="../Mavven/js/cart.js"></script>
+
+</body>
+
+</html>

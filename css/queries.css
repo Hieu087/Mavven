@@ -1,0 +1,195 @@
+/*-------------------------------------------------------*/
+/* Big tablet to 1200px */
+/*-------------------------------------------------------*/
+@media only screen and (max-width:1200px){
+    /*-------------------------------------------------------*/
+    /*------------------------HEADER-------------------------*/
+    /*-------------------------------------------------------*/
+    /*----MENU LIST----*/
+    .menu-list{
+        top: 5%;
+        left: 55%;
+    }
+    .menu-list a{
+        margin-right: 30px;
+    }
+    /*----ICON LIST----*/
+    .icon-list a{
+        margin-right: 45px;
+    }
+
+    /*-------------------------------------------------------*/
+    /*------------------------BODY---------------------------*/
+    /*-------------------------------------------------------*/
+    body{
+        font-size: 13px;
+    }
+    /*----------GENDER SECTION----------*/
+    .gender-pic a{
+        font-size: 50px;
+    }
+    /*----------PROMTION----------*/
+    .promotion .text{
+        left: 20%;
+    }
+    /*----------SHIPPING----------*/
+    .shipping p{
+        margin-left: 60px;
+    }
+    /*----------ABOUT SECTION----------*/
+    .about-section .about-text h1{
+        padding: 30px 0;
+    }
+    /*----------TESTIMONIAL SECTION----------*/
+    .testimonial-pics img{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*--------------------------------------------------*/
+/* Small tablet to big tablet from 768px to 1023px */
+/*------------------------------------------------*/
+@media only screen and (max-width:1023px){
+    /*------------------------HEADER-------------------------*/
+    /*----MENU LIST----*/
+    .menu-list{
+        display: none;
+    }
+    /*----ICON LIST----*/
+    .icon-list{
+        display: none;
+    }
+
+    /*----HAMBURGER ICON----*/
+    .hamburger{ display: block; }
+    .sticky .hamburger{ display: block; }
+
+    /*----------MAVVEN TEXT----------*/
+    .t1{
+        font-size: 15px;
+    }
+    .t2{
+        font-size: 60px;
+    }
+    /*----------STICKY----------*/
+    .sticky{
+        height: 7.5vh;
+    }
+    .sticky .logo-text{
+        margin-top: 15px;
+    }
+
+    /*------------------------BODY---------------------------*/
+    body{
+        font-size: 12px;
+    }
+    /*----------GENDER SECTION----------*/
+    .gender-pic a{
+        font-size: 35px;
+    }  
+
+    /*----------NEW ARRIVAL SECTION----------*/
+    .news-section h1{
+        font-size: 20px;
+        letter-spacing: 15px;
+    }
+
+    .news-section h1::after{
+        width: 250px;
+    }
+
+    /*----------PROMOTION----------*/
+    .promotion .text{
+        left: 25%;
+    }  
+   
+    /*----------POPULAR SECTION----------*/
+    .most-popular h1{
+        font-size: 20px;
+        letter-spacing: 15px;
+    }
+
+    .most-popular h1::after{
+        width: 250px;
+    }
+
+    /*----------SHIPPING----------*/
+    .shipping p{
+        margin-left: 50px;
+    }
+
+    /*----------ABOUT SECTION----------*/
+    .about-section h1{
+        font-size: 20px;
+        letter-spacing: 15px;
+    }
+    .about-section .small-line{
+        width: 150px;
+    }
+
+    .about-section .about-text h1{
+        padding: 20px 0;
+        font-size: 15px;
+        letter-spacing: 12px;
+    }
+
+    /*----------TESTIMONIAL SECTION----------*/
+    .testimonial-pics img{
+        margin-right: 30px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/*-------------------------------------------------------*/
+/* Small phones to small tablets */
+/*-------------------------------------------------------*/
+@media only screen and (max-width:767px){
+    /*------------------------HEADER-------------------------*/
+    /*-----LOGO-----*/
+    .logo img{
+        width: 60px;
+    }
+    .sticky .logo img{
+        width: 50px;
+    }
+    /*----MENU LIST----*/
+    .menu-list ul li a{
+        display: none;
+    }
+    /*----ICON LIST----*/
+    .icon-list ul li a{
+        display: none;
+    }
+    /*----MOBILE NAVIGATION ICON----*/
+    .hamburger{
+        display: block;
+    }
+    .sticky .hamburger{
+        display: block;
+    }
+    /*----------MAVVEN TEXT----------*/
+    .t1{
+        font-size: 15px;
+    }
+    .t2{
+        font-size: 60px;
+    }   
+
+    /*------------------------BODY---------------------------*/
+    /*----------GENDER SECTION----------*/
+    .gender-section{
+        margin: 0;
+    }
+    .gender-pic a{
+        font-size: 30px;
+    }
+}
+
+/*-------------------------------------------------------*/
+/* Small phones from 0 to 480px */
+/*-------------------------------------------------------*/
+@media only screen and (max-width:480px){
+    
+}
