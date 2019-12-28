@@ -1,10 +1,10 @@
 /*red brown: rgb(226, 52, 52)*/
 /*light grey: rgba(255, 255, 255, 0.3)*/
 
-:root {
+:root{
     --primaryColor: rgb(226, 52, 52);
     --mainSpacing: 0.1rem;
-  }
+}
 
 *{
     padding: 0px;
@@ -33,7 +33,7 @@ header{
     width: 100%;
     height: 5vh;
     background-color: white;
-    z-index: 900;
+    z-index: 5;
     box-shadow: 0px 2.5px 15px 2.5px rgba(0, 0, 0, 0.2);
     transition: all .3s;
 }
@@ -258,18 +258,19 @@ header{
 
 /*----HAMBURGER ICON----*/
 .hamburger{
-    position: relative;
-    float: right;
-    width: 0px;
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
     background-color: #262626;
     z-index: 2;
-    display: none;
     transition: all .5s;
+    transform: translateX(100%);
 }
 .hamburger.active{
-    width: 200px;
-    box-shadow: 0px 2.5px 5px 2.5px rgba(0, 0, 0, 0.7);
+    transform: translateX(0);
+    box-shadow: 0px 2.5px 5px 2.5px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger ul li{list-style: none;}
@@ -314,9 +315,11 @@ header{
     border: none;
     outline: none;
     background: none;
+    display: none;
 }
 .sticky .hamburger .hamburger-icon{
-    top: -37px;
+    top: 5px;
+    height: 35px;
     color: black;
 }
 .sticky .hamburger .hamburger-icon span, 
@@ -574,15 +577,23 @@ body{
 }
 
 .face.face2 p, span{
-    letter-spacing: var(--mainSpacing);
+
+    font-weight: bold;
     color: black;
-    width: 100%;
     display: block;
-    margin: 10px 5px;
+    margin: 0px 5px;
     text-align: left;
 }
 
+.face.face2 span{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
 .face.face2 a{
+    margin-left: 5px;
     padding: 3.5px;
     text-decoration: none;
     color: black;
