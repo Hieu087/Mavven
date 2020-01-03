@@ -768,7 +768,6 @@ body{
 .testimonial-section{
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    letter-spacing: var(--mainSpacing);
     padding: 80px 0;
     background: linear-gradient(to right top , rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/testimonial-background.jpg);
     background-position: center;
@@ -834,6 +833,7 @@ body{
     width: 70%;
     margin-left: 15%;
     margin-bottom: 20px;
+    letter-spacing: var(--mainSpacing);
 }
 
 .testimonial blockquote::before,
@@ -850,7 +850,7 @@ body{
 .testimonial .description{
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 15px;
+    font-weight: 400;
     text-align: center;
     color: rgba(255, 255, 255, 0.6);
 }
