@@ -62,8 +62,8 @@
     }
 
     /*----HAMBURGER ICON----*/
-    .hamburger{ display: block; }
-    .sticky .hamburger{ display: block; }
+    .hamburger .hamburger-icon{ display: block; }
+    .sticky .hamburger .hamburger-icon{ display: block; }
 
     /*----------MAVVEN TEXT----------*/
     .t1{
@@ -89,6 +89,11 @@
         font-size: 35px;
     }  
 
+    /*----------FACE----------*/
+    .face.face2 span{
+        font-size: 16px;
+    }
+    
     /*----------NEW ARRIVAL SECTION----------*/
     .news-section h1{
         font-size: 20px;

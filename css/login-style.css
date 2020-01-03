@@ -12,7 +12,7 @@ body{
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 100px 80px;
-    background: rgb(0, 0, 0,0.7);
+    background: rgba(0, 0, 0,0.7);
     color: white;
 }
 
@@ -66,5 +66,10 @@ a{
     margin: 10px 0;
     display: block;
     text-decoration: none;
-    color: rgb(116, 98, 98)
+    color: rgb(116, 98, 98);
+    transition: all .3s;
+}
+
+a:hover{
+    color: rgb(226, 52, 52);
 }
