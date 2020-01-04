@@ -17,6 +17,9 @@
     .icon-list a{
         margin-right: 45px;
     }
+    .header-bg .header-pic{
+        height: 115%;
+    }
 
     /*-------------------------------------------------------*/
     /*------------------------BODY---------------------------*/
@@ -27,6 +30,10 @@
     /*----------GENDER SECTION----------*/
     .gender-pic a{
         font-size: 50px;
+    }
+    /*----------FACE----------*/
+    .face.face1 img{
+        height: 50vh;
     }
     /*----------PROMTION----------*/
     .promotion .text{
@@ -60,7 +67,9 @@
     .icon-list{
         display: none;
     }
-
+    .header-bg .header-pic{
+        height: 100%;
+    }
     /*----HAMBURGER ICON----*/
     .hamburger .hamburger-icon{ display: block; }
     .sticky .hamburger .hamburger-icon{ display: block; }
@@ -85,14 +94,27 @@
         font-size: 12px;
     }
     /*----------GENDER SECTION----------*/
+    .gender-section{
+        margin: 0 0;
+    }
     .gender-pic a{
         font-size: 35px;
     }  
 
     /*----------FACE----------*/
+    .face.face1 img{
+        height: 40vh;
+    }
     .face.face2 span{
         font-size: 16px;
+        margin-top: 7.5px;
+        margin-bottom: 10px;
     }
+    .face.face2 a{
+        margin-left: 5px;
+        padding: 2.5px;
+    }
+
     
     /*----------NEW ARRIVAL SECTION----------*/
     .news-section h1{

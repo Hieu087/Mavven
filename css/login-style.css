@@ -1,8 +1,9 @@
 body{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    background-image: url(../img/login-bg.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../img/login-bg.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .login-box{
@@ -26,8 +27,8 @@ body{
 .textbox{
     overflow: hidden;
     width: 93%;
-    margin: 10px 10px;
-    padding: 2.5px 10px;
+    margin: 15px 10px;
+    padding: 5px 10px;
     border-bottom: 2px solid rgba(226, 52, 52, 0.9);
 }
 
@@ -46,12 +47,12 @@ body{
 
 .btn{
     display: block;
-    margin: 50px 85px;
+    margin: 50px 35px;
     padding: 10px;
-    background: none;
+    background: transparent;
     outline: none;
-    width: 50%;
-    border: 2px solid rgba(226, 52, 52, 0.9);
+    width: 80%;
+    border: 1px solid rgba(226, 52, 52, 0.9);
     color: white;
     cursor: pointer;
     transition: .4s;

@@ -2,7 +2,7 @@
 var slideIndex = 0;
 var timeOut = 5000;
 //------CHANGE SLIDE------
-function changeDot(n) {
+function changeDotPic(n) {
     var pic = document.getElementsByClassName("header-pic");
     var dot = document.getElementsByClassName("dot");
 
