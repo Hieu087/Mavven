@@ -817,6 +817,18 @@ body{
 
 .testimonial.active{
     display: block;
+    animation-name: screenAppear;
+    animation-duration: 1s;
+}
+@keyframes screenAppear {
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .testimonial blockquote{
