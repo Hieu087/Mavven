@@ -726,7 +726,7 @@ body{
 
 .about-section .about-text{
     color: white;
-    overflow: scroll;
+    overflow-y: scroll;
     background-color: var(--primaryColor);
     height: 100vh;
     text-align: center;
