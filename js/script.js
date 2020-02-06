@@ -35,6 +35,10 @@ function carousel() {
     setTimeout(carousel, timeOut);
 }
 
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+});
+
 $(document).ready(function(){
     //------------------STICKY------------------
     $('.gender-section').waypoint(
@@ -79,9 +83,6 @@ $(document).ready(function(){
         }
     )
 })
-
-
-    
 
 
         
