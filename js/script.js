@@ -49,7 +49,7 @@ $(document).ready(function(){
                 $('nav').removeClass('sticky');
             }
         },{
-            offset: '640px'
+            offset: '440px'
         }
     )
 
