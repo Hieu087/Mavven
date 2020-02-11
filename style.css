@@ -241,8 +241,8 @@ header{
 } 
 
 .item img{
-    width: 100px;
-    height: 100px;
+    width: 35%;
+    height: auto;
 }
 
 .item .item-center{margin-left: 20px;}
